@@ -7,11 +7,22 @@
   position: relative;
   isolation: isolate;
   padding: calc(var(--spacing-xxl) + 1.5rem) 0 var(--spacing-xxl);
+  background-color: #05050c;
+  overflow: hidden;
+}
+
+.hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('../../images/hero-dining-platform-dubai.jpg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
+  opacity: 0.75;
+  z-index: -1;
 }
 
 .hero::before {
