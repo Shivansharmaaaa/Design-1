@@ -1,0 +1,81 @@
+/* ==========================================
+   CSS CUSTOM PROPERTIES
+   Core design tokens and variables
+   ========================================== */
+
+:root {
+  /* Colors - Background */
+  --color-bg: #ffffff;
+  --color-bg-alt: #fafaf9;
+  --color-surface: rgba(250, 250, 249, 0.95);
+  --color-surface-solid: #f5f5f4;
+  --color-surface-soft: rgba(255, 255, 255, 0.8);
+  --color-overlay: rgba(0, 0, 0, 0.03);
+
+  /* Colors - Accent */
+  --color-accent: #60a5fa;
+  --color-accent-strong: #3b82f6;
+  --color-accent-soft: rgba(96, 165, 250, 0.1);
+  --color-secondary: #818cf8;
+  --color-secondary-soft: rgba(129, 140, 248, 0.1);
+
+  /* Colors - Text */
+  --color-text: #1a1a1a;
+  --color-text-muted: #666666;
+  --color-text-soft: #999999;
+
+  /* Colors - Borders */
+  --color-border: rgba(96, 165, 250, 0.2);
+  --color-border-strong: rgba(96, 165, 250, 0.4);
+  --color-border-soft: rgba(0, 0, 0, 0.06);
+
+  /* Shadows */
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 12px 40px rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 6px 20px rgba(0, 0, 0, 0.04);
+  --shadow-glow: 0 0 40px rgba(96, 165, 250, 0.2);
+
+  /* Typography */
+  --font-heading: "Cormorant Garamond", "Poppins", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+
+  /* Border Radius */
+  --radius-pill: 999px;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+
+  /* Gradients */
+  --gradient-hero: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(250, 250, 249, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  --gradient-section: linear-gradient(
+    180deg,
+    rgba(250, 250, 249, 0.5) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  --gradient-panel: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 1),
+    rgba(250, 250, 249, 0.8)
+  );
+  --gradient-accent: linear-gradient(
+    135deg,
+    var(--color-accent),
+    var(--color-accent-strong)
+  );
+
+  /* Spacing */
+  --spacing-xxl: clamp(5rem, 7.5vw, 7.5rem);
+  --spacing-xl: clamp(3rem, 5vw, 5rem);
+  --spacing-lg: clamp(2rem, 4vw, 3.5rem);
+  --spacing-md: clamp(1.5rem, 3vw, 2.5rem);
+  --spacing-sm: clamp(1rem, 2.2vw, 1.5rem);
+  --spacing-xs: 0.75rem;
+  --spacing-xxs: 0.5rem;
+}
+

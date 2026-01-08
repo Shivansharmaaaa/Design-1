@@ -1,0 +1,10 @@
+/* ==========================================
+   TESTIMONIALS SECTION
+   Testimonials section styling
+   ========================================== */
+
+.section--testimonials {
+  background: #ffffff;
+  border-top: 1px solid var(--color-border-soft);
+}
+

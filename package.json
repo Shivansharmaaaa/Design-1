@@ -1,0 +1,11 @@
+{
+  "name": "dinner-in-the-sky-modern",
+  "version": "1.0.0",
+  "description": "Modern website for Dinner in the Sky Dubai",
+  "scripts": {
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

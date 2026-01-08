@@ -1,0 +1,68 @@
+/* ==========================================
+   SAFETY SECTION
+   Safety section and panel styling
+   ========================================== */
+
+.section--safety {
+  position: relative;
+  isolation: isolate;
+  background-image: url('../../images/safety.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 1px solid var(--color-border-soft);
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.section--safety::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section--safety .container {
+  position: relative;
+  z-index: 1;
+}
+
+.safety {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: stretch;
+}
+
+.safety__content p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-sm);
+}
+
+.safety__panel {
+  padding: var(--spacing-lg);
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-soft);
+  box-shadow: var(--shadow-md);
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.safety__badge {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  justify-self: flex-start;
+  font-weight: 600;
+  border: 1px solid var(--color-border);
+}
+

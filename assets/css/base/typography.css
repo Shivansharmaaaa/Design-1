@@ -1,0 +1,22 @@
+/* ==========================================
+   TYPOGRAPHY
+   Text styles and utility classes
+   ========================================== */
+
+.eyebrow {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: var(--color-accent);
+  font-weight: 700;
+  margin-bottom: var(--spacing-xxs);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.lead {
+  font-size: clamp(1rem, 1.1vw + 0.9rem, 1.2rem);
+  color: var(--color-text-muted);
+  max-width: 42ch;
+}
+

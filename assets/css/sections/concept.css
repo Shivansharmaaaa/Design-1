@@ -1,0 +1,11 @@
+/* ==========================================
+   CONCEPT SECTION
+   Concept section styling
+   ========================================== */
+
+.section--concept {
+  background: var(--gradient-section);
+  border-top: 1px solid var(--color-border-soft);
+  border-bottom: 1px solid var(--color-border-soft);
+}
+

@@ -1,0 +1,92 @@
+/* ==========================================
+   DINNER IN THE SKY - MAIN STYLESHEET
+   Modern, modular CSS architecture
+   ========================================== */
+
+/* Base - Foundation styles */
+@import 'base/variables.css';
+@import 'base/reset.css';
+@import 'base/layout.css';
+@import 'base/typography.css';
+
+/* Components - Reusable UI elements */
+@import 'components/buttons.css';
+@import 'components/navigation.css';
+@import 'components/cards.css';
+@import 'components/lists.css';
+
+/* Sections - Page-specific sections */
+@import 'sections/hero.css';
+@import 'sections/concept.css';
+@import 'sections/sessions.css';
+@import 'sections/testimonials.css';
+@import 'sections/safety.css';
+@import 'sections/booking.css';
+@import 'sections/footer.css';
+
+/* Utilities - Animations and responsive */
+@import 'utilities/animations.css';
+@import 'utilities/responsive.css';
+
+/* Feature Card Backgrounds */
+.feature-card--lunch {
+  background-image: url('../images/lunch.png') !important;
+  background-position: center 35% !important;
+}
+
+.feature-card--teabreak {
+  background-image: url('../images/teabreak.png') !important;
+  background-position: center !important;
+}
+
+.feature-card--romantic {
+  background-image: url('../images/romanticdinner.png') !important;
+  background-position: center 60% !important;
+}
+
+.feature-card--branding {
+  background-image: url('../images/branding.png') !important;
+  background-position: center !important;
+}
+
+/* Section Backgrounds - Hero Style */
+.section--sessions {
+  position: relative !important;
+  isolation: isolate !important;
+  background-image: url('../images/bg1.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.section--sessions .container {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.section--safety {
+  position: relative !important;
+  isolation: isolate !important;
+  background-image: url('../images/safety.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.section--safety::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+.section--safety .container {
+  position: relative !important;
+  z-index: 1 !important;
+}
+

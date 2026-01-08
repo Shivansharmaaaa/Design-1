@@ -1,0 +1,193 @@
+/* ==========================================
+   HERO SECTION
+   Hero layout, content, and panel styles
+   ========================================== */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  padding: calc(var(--spacing-xxl) + 1.5rem) 0 var(--spacing-xxl);
+  background-image: url('../../images/hero-dining-platform-dubai.jpg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.0625);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at top right,
+    rgba(245, 247, 255, 0.0375) 0%,
+    rgba(255, 255, 255, 0.025) 50%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.hero__content h1 {
+  font-size: clamp(2.6rem, 4vw, 3.8rem);
+  margin-bottom: var(--spacing-sm);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.3s forwards;
+  line-height: 1.2;
+  text-shadow: 0 2px 12px rgba(255, 255, 255, 0.8);
+}
+
+.hero__content .highlight {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  display: inline-block;
+}
+
+.hero__content .lead {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.5s forwards;
+  text-shadow: 0 1px 8px rgba(255, 255, 255, 0.8);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-md);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.7s forwards;
+}
+
+.hero__meta {
+  margin-top: var(--spacing-lg);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spacing-sm);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.9s forwards;
+}
+
+.hero__meta div {
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-soft);
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.85);
+  transition: all 0.4s ease;
+}
+
+.hero__meta div:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-md);
+}
+
+.hero__meta strong {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--color-accent);
+}
+
+.hero__meta span {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  display: block;
+}
+
+.hero__media {
+  display: grid;
+  gap: var(--spacing-md);
+  justify-items: center;
+}
+
+.hero__panel {
+  width: min(100%, 26rem);
+  padding: var(--spacing-lg) var(--spacing-md);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-soft);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(20px);
+  opacity: 0;
+  animation: fadeInScale 1s ease 0.5s forwards;
+  transition: all 0.4s ease;
+}
+
+.hero__panel:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  border-color: var(--color-border);
+}
+
+.panel__tag {
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+  border: 1px solid var(--color-border);
+}
+
+.panel__content h2 {
+  font-size: 1.6rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.panel__content p {
+  color: var(--color-text-muted);
+}
+
+.panel__footer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.panel__footer .label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.panel__footer .value {
+  font-weight: 600;
+  margin-top: 0.35rem;
+}
+
