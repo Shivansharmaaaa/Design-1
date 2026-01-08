@@ -23,6 +23,7 @@
   background-repeat: no-repeat;
   opacity: 0.75;
   z-index: -1;
+  will-change: transform, opacity;
 }
 
 .hero::before {
@@ -75,6 +76,7 @@
   line-height: 1.2;
   color: #ffffff;
   text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  will-change: opacity, transform;
 }
 
 .hero__content .highlight {
@@ -85,6 +87,7 @@
   position: relative;
   display: inline-block;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+  will-change: filter;
 }
 
 .hero__content .lead {
@@ -92,6 +95,7 @@
   animation: fadeInUp 0.8s ease 0.5s forwards;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  will-change: opacity, transform;
 }
 
 .hero__actions {
@@ -101,6 +105,7 @@
   margin-top: var(--spacing-md);
   opacity: 0;
   animation: fadeInUp 0.8s ease 0.7s forwards;
+  will-change: opacity, transform;
 }
 
 .hero__meta {
@@ -110,6 +115,7 @@
   gap: var(--spacing-sm);
   opacity: 0;
   animation: fadeInUp 0.8s ease 0.9s forwards;
+  will-change: opacity, transform;
 }
 
 .hero__meta div {
@@ -157,6 +163,7 @@
   opacity: 0;
   animation: fadeInScale 1s ease 0.5s forwards;
   transition: all 0.4s ease;
+  will-change: transform, opacity;
 }
 
 .hero__panel:hover {

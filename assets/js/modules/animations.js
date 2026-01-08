@@ -4,13 +4,19 @@
    ========================================== */
 
 export function initAnimations() {
+  const isMobile = window.innerWidth <= 768;
+  
   initScrollReveal();
-  initParallax();
   initHeaderScroll();
   initStaggeredCards();
   initStatsCounter();
   initSmoothScroll();
-  initMagneticButtons();
+
+  if (!isMobile) {
+    initParallax();
+    initMagneticButtons();
+    initCardTilt();
+  }
 }
 
 // ============================================
@@ -234,7 +240,4 @@ function initCardTilt() {
     });
   });
 }
-
-// Initialize card tilt on load
-window.addEventListener("load", initCardTilt);
 
