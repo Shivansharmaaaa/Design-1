@@ -21,7 +21,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.0625);
+  background: linear-gradient(
+    72deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
   z-index: 0;
   pointer-events: none;
 }
@@ -35,8 +40,8 @@
   height: 100%;
   background: radial-gradient(
     circle at top right,
-    rgba(245, 247, 255, 0.0375) 0%,
-    rgba(255, 255, 255, 0.025) 50%
+    rgba(0, 0, 0, 0.1) 0%,
+    transparent 70%
   );
   z-index: 0;
   pointer-events: none;
@@ -57,7 +62,8 @@
   opacity: 0;
   animation: fadeInUp 0.8s ease 0.3s forwards;
   line-height: 1.2;
-  text-shadow: 0 2px 12px rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .hero__content .highlight {
@@ -67,12 +73,14 @@
   background-clip: text;
   position: relative;
   display: inline-block;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
 }
 
 .hero__content .lead {
   opacity: 0;
   animation: fadeInUp 0.8s ease 0.5s forwards;
-  text-shadow: 0 1px 8px rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero__actions {
